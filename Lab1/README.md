@@ -7,21 +7,33 @@ The proposed solution for Lab1 is divided in:
 ## Expected results with SEED=42
 - N = 5
   > Breadth First total visited states 247, solution found in 3 steps
+  > 
   > Depth First total visited states 53, solution found in 8 steps
+  > 
   > Greedy total visited states 28, solution found in 3 steps
+  > 
   > A* total visited states 151, solution found in 3 steps 
 
 - N = 10
   > Breadth First total visited states 31579, solution found in 3 steps
+  > 
   > Depth First total visited states 553, solution found in 16 steps
+  > 
   > Greedy total visited states 124, solution found in 3 steps
+  > 
   > A* total visited states 2197, solution found in 4 steps 
 
 - N = 20
   > Breadth First total visited states 65649, solution found in 4 steps
+  >
   > Depth First total visited states 568, solution found in 27 steps
+  > 
   > Greedy total visited states 131, solution found in 4 steps
-  > A* total visited states 54077, solution found in 5 steps 
+  > 
+  > A* total visited states 54077, solution found in 5 steps
+
+- N = 100 
+  > Greedy total visited states 2126, solution found in 5 steps
 
 ## Known issues
 From N = 100 too many states are visited and added to the frontier and any output is generated in acceptable time. 
