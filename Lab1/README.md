@@ -38,7 +38,8 @@ The proposed solution for Lab1 is divided in:
 ## Known issues
 From N = 100 too many states are visited and added to the frontier and any output is generated in acceptable time. 
 
-## Collaboration with
+## Collaboration
+Collaboration with students:
 - s302294
 - s280117
 
