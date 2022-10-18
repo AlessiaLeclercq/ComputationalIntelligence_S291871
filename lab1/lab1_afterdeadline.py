@@ -90,6 +90,7 @@ def goal_test(state: frozenset, N):
 		goal_set.update(list_._data)  
 	return len(goal_set) == N
 
+
 def is_valid(state: frozenset, action: HashableArray):
 #is_valid returns True if the action is not already in the state, otherwise False
     return action not in state
