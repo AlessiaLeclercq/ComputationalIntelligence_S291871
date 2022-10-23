@@ -4,7 +4,7 @@ N = 100
 SEED = 42
 random.seed(SEED)
 
-ALL_STATES = transform_set(problem(N, SEED))
+ALL_ACTIONS = transform_set(problem(N, SEED))
 INITIAL_STATE = frozenset()
 
 parent_state = dict()
@@ -14,7 +14,7 @@ state_cost = dict()
 print("Breadth First")
 final = search(
     INITIAL_STATE,
-    ALL_STATES,
+    ALL_ACTIONS,
     N,
     goal_test=goal_test,
     parent_state=parent_state,
@@ -27,7 +27,7 @@ final = search(
 print("Depth First")
 final = search(
     INITIAL_STATE,
-    ALL_STATES,
+    ALL_ACTIONS,
     N, 
     goal_test=goal_test,
     parent_state=parent_state,
@@ -41,7 +41,7 @@ final = search(
 print("Greedy")
 final = search(
     INITIAL_STATE,
-    ALL_STATES,
+    ALL_ACTIONS,
     N,
     goal_test=goal_test,
     parent_state=parent_state,
@@ -55,7 +55,7 @@ final = search(
 print("A*")
 final = search(
     INITIAL_STATE,
-    ALL_STATES,
+    ALL_ACTIONS,
     N,
     goal_test=goal_test,
     parent_state=parent_state,
