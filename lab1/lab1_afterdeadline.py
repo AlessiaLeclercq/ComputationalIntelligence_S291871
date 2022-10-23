@@ -95,9 +95,9 @@ def is_valid(state: frozenset, action: HashableArray):
 #is_valid returns True if the action is not already in the state, otherwise False
     return action not in state
 
-def possible_actions(state: frozenset, ALL_STATES: frozenset): 
+def possible_actions(state: frozenset, ALL_ACTIONS: frozenset): 
 #possible_actions returns all actions that are not already present in the State    
-    return (action for action in ALL_STATES if is_valid(state, action))
+    return (action for action in ALL_ACTIONS if is_valid(state, action))
 
 def result(state: frozenset, action: HashableArray):
 #result returns a new state in which the action is added 
@@ -114,7 +114,7 @@ def h(state: frozenset, N):
 #search function from 8-puzzle.ipynb professor Squillero with added parameters (ALL_STATES, N)
 def search(
     initial_state: frozenset,
-    ALL_STATES : frozenset,
+    ALL_ACTIONS : frozenset,
     N : int, 
     goal_test: Callable,
     parent_state: dict,
@@ -131,7 +131,7 @@ def search(
     state_cost[state] = 0
 
     while state is not None and not goal_test(state, N):
-        for a in possible_actions(state, ALL_STATES):
+        for a in possible_actions(state, ALL_ACTIONS):
             new_state = result(state, a)
             cost = unit_cost(a)
             if new_state not in state_cost and new_state not in frontier:
