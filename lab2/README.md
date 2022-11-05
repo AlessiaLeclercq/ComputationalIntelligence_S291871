@@ -1,6 +1,6 @@
 
 # Lab2
-The proposed solution for Lab2 is [here](https://github.com/AlessiaLeclercq/ComputationalIntelligence_S291871/blob/main/lab2)
+The proposed solution for Lab2 is [here](https://github.com/AlessiaLeclercq/ComputationalIntelligence_S291871/blob/main/lab2/lab2.ipynb)
 
 ## Expected results with SEED=42
 Given the known issues the problem has been runned multiple times returning the following weights for the following parameters: 
