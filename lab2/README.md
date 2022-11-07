@@ -11,12 +11,14 @@ Given the known issues the problem has been runned multiple times returning the 
 - Rate at which the negation mutation is performed = .25
 - Rate at which a single flip mutation is performed = .25
 
-| N = 5  | N = 10 |  N = 100 | N = 500 | N = 1000 |
+| PROBLEM_SIZE = 5  | PROBLEM_SIZE = 10 |  PROBLEM_SIZE = 100 | PROBLEM_SIZE = 500 | PROBLEM_SIZE = 1000 |
 |:-------|:-------|:--------|:--------|:---------|
 | 5      | 12     | 255     | 1732    | 3885     |
 
 ## Known issues
-For high values of the population_size, the computation starts to be expensive, maybe another problem representation is more efficient. 
+- For high values of the population_size, the computation starts to be expensive, maybe another problem representation is more efficient. 
+- Multiple mutations instead than a single one might have a higher performance, but too computationally expensive.
+- I did not only look for a population with distinct elements. 
 
 ## Collaboration
 Collaboration with students:
