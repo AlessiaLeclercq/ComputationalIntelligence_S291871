@@ -13,12 +13,12 @@ The algorithm has been trained against some adversaries:
 - *human_player* that enables the user to play against the game
 
 Here the percentage of times it won against an adversary:
-| ADVERSARY  | WINNING PERCENTAGE| STARTING THRESHOLD | LEARNED THRESHOLD |
-|:-------|:-------|:-------|
-| random_player | 1.  |  .37 | .43 |
-| basic_player  | 1.  |  .37 | .37 |
-| nim_sum  30%  | .46 |  .37 | .20 |
 
+| ADVERSARY  | WINNING PERCENTAGE| STARTING THRESHOLD | LEARNED THRESHOLD |
+|:-----------|:------------------|:-------------------|:------------------|
+| random_player | 1.  |  .37 | .43 
+| basic_player  | 1.  |  .37 | .37 
+| nim_sum  30%  | .46 |  .37 | .20 
 
 # YANKING 
 Squillero rastrigin [here](https://github.com/squillero/computational-intelligence/blob/master/2021-22/rastrigin.ipynb) and nim [here](https://github.com/squillero/computational-intelligence/blob/master/2022-23/lab3_nim.ipynb)
